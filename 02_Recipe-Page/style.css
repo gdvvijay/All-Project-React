@@ -1,0 +1,119 @@
+body{
+    box-sizing:border-box;
+    margin:0;
+    font-family:sans-serif;
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+    /* overflow-y:scroll; */
+}
+
+img{
+    width:100%;
+}
+
+.Headding{
+    margin-bottom:0;
+    margin-top:10px;
+}
+/* first paragraph */
+.firstP{
+    font-size:7px;
+    color:#79706C;
+}
+
+.allContent{
+    margin:10px;
+}
+
+/* all content of preparation div */
+.Preparation{
+    background-color:#FFF7FC;
+    border-radius:3px;
+}
+
+/* preparation heading position control through padding for better view */
+.headding-pre{
+    padding-left:18px;
+    padding-top:20px;
+}
+
+/* thi is for space between line in list */
+.marun li{
+    padding-bottom:10px;
+}
+
+/* most common used color */
+.marun{
+    color:#864632;
+
+}
+
+.list-black{
+    color:#79706C;
+    font-weight:600;
+}
+
+.list-other{
+    color:#877D7C;
+    font-weight:500;
+}
+
+.list-ingre{
+    font-size:11px;
+    font-weight:400;
+    font-family:lucida sans  regular;
+}
+
+.heading-ing{
+    font-family:'Times New Roman',Times,serif;
+    margin-left:14px;
+}
+.font-list{
+    font-size:11px;
+    font-family:lucida sans regular;
+    font-weight:500;
+}
+
+.last-p{
+    font-size:11px;
+    font-family:lucida sans regular;
+    color:#877D7C;
+    margin-left:13px;
+    margin-top:-5px;
+    font-weight:500;
+}
+.table{
+    width:90%;
+    margin-left:30px;
+    font-family:lucida sans regular;
+    color:#877D7C;
+    font-weight:600;
+    font-size:12px;
+}
+
+/* media query for desktop responsive design */
+
+@media(width > 720px){
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color:#F3E5D8;
+    }
+    .main{
+        padding:15px;
+
+        border-radius:10px;
+    }
+    img{
+        border-radius:0.4rem;
+    }
+    .main{
+        margin-top:500px;
+        min-height:80vh;
+        max-width:30vw;
+        background-color:#ffffff;
+    
+    }
+}
