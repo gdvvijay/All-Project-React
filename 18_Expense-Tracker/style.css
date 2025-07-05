@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.table-bordered th,
+.table-bordered td {
+  border: 2px solid theme('colors.gray.300'); /* Using theme() for consistency */
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.input-container input{
+    outline:1px solid black;
+    padding-left:5px;
+}
+
+.expense-tracker button{
+    border:1px solid;
+    background-color:rgba(128, 128, 128, 0.122);
+}
