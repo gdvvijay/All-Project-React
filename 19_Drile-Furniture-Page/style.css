@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Add to your CSS file */
+.image-container-scroll {
+    /* Already handled by Tailwind: flex overflow-x-auto w-full max-w-6xl */
+    scrollbar-width: none; /* Firefox */
+}
+.image-container-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+.category-item {
+    /* Already handled by Tailwind: min-w-[25%] flex-shrink-0 */
+}
