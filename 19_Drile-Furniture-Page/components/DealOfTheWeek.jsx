@@ -15,20 +15,20 @@ export default function DealOfTheWeek(){
                             </div>
                           <div className="bg-[#F6F6F6] flex flex-col grow pl-[2.5rem] pt-[2.5rem] pr-[2.5rem] max-lg:pl-2.5 max-lg:pr-2.5 max-lg:pt-2.5">
                                 <p className="text-[1rem] font-sans text-center w-[9.625rem] text-nowrap py-1 bg-[#8096BC] text-[#FFFFFF]">DEAL OF THE WEEK</p>
-                                <p className="text-5xl font-[Federo] mt-6 tracking-[2px]">from <span className="text-[#78A2CA]">$99.99</span></p>
-                                <p className="text-[#727272] font-sans font-light ">Supple and durable, leather is a timeless choice that develops a beautiful patina over time. From the smooth, consistent grain of top-grain leather to the rich, natural variations of full-grain, a leather sofa adds a touch of sophistication and is remarkably easy to maintain. For a more budget-friendly option, high-quality leatherette offers a similar aesthetic with excellent durability.</p>
-                                <button className="w-[7rem] bg-[#434343] text-[#FFFFFF] py-1 mt-5">SHOP NOW</button>
+                                <p className="text-5xl max-sm:text-3xl font-[Federo] mt-6 max-sm:mt-3 tracking-[2px]">from <span className="text-[#78A2CA]">$99.99</span></p>
+                                <p className="text-[#727272] font-sans font-light max-sm:text-sm">Supple and durable, leather is a timeless choice that develops a beautiful patina over time. From the smooth, consistent grain of top-grain leather to the rich, natural variations of full-grain, a leather sofa adds a touch of sophistication and is remarkably easy to maintain. For a more budget-friendly option, high-quality leatherette offers a similar aesthetic with excellent durability.</p>
+                                <button className="w-[7rem] bg-[#434343] text-[#FFFFFF] py-1 mt-5 max-sm:w-[5rem] text-sm">SHOP NOW</button>
                                 <div className="flex gap-[0.625rem] max-w-[28.112rem] mt-4">
-                                    <div className="flex items-center justify-center bg-[#FFFFFF] w-20 h-20">
+                                    <div className="flex items-center justify-center bg-[#FFFFFF] w-20 h-20 max-sm:w-16 max-sm:h-16">
                                         <img src={watch} alt="black watch"/>
                                     </div>
-                                    <div className="flex items-center justify-center bg-[#FFFFFF]  w-20 h-20">
+                                    <div className="flex items-center justify-center bg-[#FFFFFF]  w-20 h-20 max-sm:w-16 max-sm:h-16">
                                         <img  src={image5} alt="black chair"/>
                                     </div>
-                                    <div className="flex items-center justify-center bg-[#FFFFFF]  w-20 h-20">
+                                    <div className="flex items-center justify-center bg-[#FFFFFF]  w-20 h-20 max-sm:w-16 max-sm:h-16">
                                         <img src={image7} alt="golden table"/>
                                     </div>
-                                    <div className="flex items-center justify-center bg-[#FFFFFF] w-20 h-20">
+                                    <div className="flex items-center justify-center bg-[#FFFFFF] w-20 h-20 max-sm:w-16 max-sm:h-16">
                                         <img src={image1} alt="bulb image"/>
                                     </div>
                                 </div>

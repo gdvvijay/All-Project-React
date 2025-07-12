@@ -31,7 +31,7 @@ export default function TrendingCategories() {
 
     return (
         <div className="flex flex-col self-stretch items-center mt-32 max-[1180px]:pl-4 max-[1180px]:pr-4 relative">
-            <p className="paragraph text-center max-w-6xl font-[Federo] tracking-[2px] text-4xl mb-24 max-[500px]:mb-0 max-lg:text-2xl">
+            <p className="paragraph text-center max-w-6xl font-[Federo] tracking-[2px] text-4xl mb-24 max-[500px]:mb-0 max-lg:text-2xl max-sm:text-sm">
                 TRENDING CATEGORIES
             </p>
             <div
