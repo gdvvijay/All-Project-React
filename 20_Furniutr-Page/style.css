@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.text-border{
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+ .grid-background {
+            background-image: linear-gradient(to right, hsl(0, 0%, 0%,8%) 1px, transparent 1px),
+                              linear-gradient(to bottom, hsl(0, 0%, 0%,8%) 1px, transparent 1px),
+                              radial-gradient(circle at center, #d1d5db 1px, transparent 1px);
+            background-size: 150px 150px; /* Adjust grid cell size here */
+
+            background-position: 10% 10%;
+        }
