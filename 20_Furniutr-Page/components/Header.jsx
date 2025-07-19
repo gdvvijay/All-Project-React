@@ -1,16 +1,21 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [isVisible,setVisible]=useState(false);
   return (
     <header className="flex max-w-6xl w-full justify-between gap-7  max-[1250px]:px-16 max-sm:px-8">
       <h1 className="font-[SF_Pro_Display,sans-serif] text-[2.5rem] max-md:text-[2rem] max-sm:text-[1.5rem] font-black">
         Furniutr.
       </h1>
-      <div className="flex justify-between w-full max-w-sm items-center text-[#282A30] max-sm:hidden">
-        <Link to="/">Home</Link>
-        <Link to="#about">About</Link>
-        <Link to="#collection">Collection</Link>
-        <Link to="#shop">Shop</Link>
+      <div className={`flex justify-between w-full max-w-sm items-center text-[#282A30]  max-sm:flex-col max-sm:place-items-baseline max-sm:bg-amber-500 max-sm:absolute max-sm:w-24 max-sm:pl-3 max-sm:rounded-[4px] max-sm:font-bold max-sm:py-1 right-1 top-9 z-40 ${isVisible ? 'max-sm:flex' : 'max-sm:hidden'}`}>
+        <button className="hidden max-sm:block max-sm:absolute max-sm:right-2 max-sm:top-0 font-bold" onClick={()=>{
+          setVisible(false);
+        }}>&times;</button>
+        <Link to="/" className="mt-1.5 hover:px-0.5 hover:text-gray-50 hover:border hover:border-black hover:text-shadow-[1px_0px_1px_#000000]">Home</Link>
+        <Link to="#about " className="hover:px-0.5 hover:text-gray-50 hover:border hover:border-black hover:text-shadow-[1px_0px_1px_#000000]">About</Link>
+        <Link to="#collection" className="hover:px-0.5 hover:text-gray-50 hover:border hover:border-black hover:text-shadow-[1px_0px_1px_#000000]">Collection</Link>
+        <Link to="#shop" className="hover:px-0.5 hover:text-gray-50 hover:border hover:border-black hover:text-shadow-[1px_0px_1px_#000000]">Shop</Link>
       </div>
       <div className="flex w-full max-w-20 justify-between items-center">
         <svg
@@ -19,7 +24,6 @@ export default function Header() {
           viewBox="0 0 20 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          
         >
           <path
             d="M4 1.2001L1 5.4989V20.5447C1 21.1148 1.21071 21.6615 1.58579 22.0646C1.96086 22.4676 2.46957 22.6941 3 22.6941H17C17.5304 22.6941 18.0391 22.4676 18.4142 22.0646C18.7893 21.6615 19 21.1148 19 20.5447V5.4989L16 1.2001H4Z"
@@ -49,12 +53,23 @@ export default function Header() {
           viewBox="0 0 27 30"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-         
         >
           <path
             d="M26.5862 27.0803L20.4654 20.5023C21.939 18.394 22.7345 15.8278 22.7318 13.191C22.7318 6.45568 17.633 0.976013 11.3659 0.976013C5.09879 0.976013 0 6.45568 0 13.191C0 19.9262 5.09879 25.4059 11.3659 25.4059C13.8195 25.4088 16.2073 24.5539 18.1691 22.9702L24.2898 29.5482C24.5997 29.8458 25.0038 30.0047 25.4192 29.9922C25.8346 29.9797 26.2298 29.7968 26.5237 29.481C26.8175 29.1652 26.9877 28.7405 26.9994 28.294C27.011 27.8476 26.8631 27.4133 26.5862 27.0803ZM3.24741 13.191C3.24741 11.4653 3.72355 9.77845 4.61562 8.34364C5.5077 6.90882 6.77563 5.79052 8.2591 5.13015C9.74256 4.46978 11.3749 4.29699 12.9498 4.63365C14.5246 4.9703 15.9712 5.80127 17.1066 7.02148C18.242 8.24169 19.0152 9.79633 19.3284 11.4888C19.6417 13.1813 19.4809 14.9356 18.8664 16.5299C18.252 18.1241 17.2114 19.4868 15.8763 20.4455C14.5412 21.4042 12.9716 21.9159 11.3659 21.9159C9.21355 21.9132 7.15007 20.993 5.62812 19.3574C4.10616 17.7217 3.24999 15.5041 3.24741 13.191Z"
             fill="black"
           />
+        </svg>
+        <svg
+          onClick={()=>{
+            setVisible(!isVisible);
+          }}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          width="24px"
+          height="24px"
+          className="hidden max-sm:block"
+        >
+          <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" />
         </svg>
       </div>
     </header>
