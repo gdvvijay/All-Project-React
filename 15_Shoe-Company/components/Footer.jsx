@@ -8,7 +8,7 @@ export default function Footer(){
                     <img className="w-20" src="../src/assets/logo1.png" alt="logo"/>
 
                 </Link>
-                <p className="">Made with 🤍 By Vijay Makuvara The Shoe Company</p>
+                <p className="">Made with 🤍 By Vijay gadhvi The Shoe Company</p>
             </div>
         </footer>
     )

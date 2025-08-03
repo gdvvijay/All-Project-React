@@ -7,8 +7,8 @@ export default function Header(){
                 <img className="w-24 md:w-32" src="../src/assets/logo1.png" alt="logo"/>
             </Link>
             <nav className="hidden md:block space-x-6 lg:space-x-8 font-bold lg:text-2xl">
-                <Link to="/">Home</Link>
-                <Link to="#how-it-words">How It Works?</Link>
+                <Link to="#hero">Home</Link>
+                <Link to="#how-it-work">How It Works?</Link>
                 <Link to="#about">About</Link>
                 <Link to="#testimonials">Testimonials</Link>
                 <Link to="#contact">Contact Us</Link>
