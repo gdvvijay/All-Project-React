@@ -1,9 +1,10 @@
+import aboutShoeImage from '../src/assets/about-shoe-company.png'
 export default function AboutSection(){
     return(
         <section id="about" className="section-container mt-32 flex flex-col md:flex-row md:space-x-12 scroll-mt-28">
             <h2 className="text-3xl my-6 text-center font-bold md:hidden">About Us!</h2>
             <div className="bg-[url('../src/assets/about-us-background.png')] bg-no-repeat md:w-full self-center">
-                <img  src="../src/assets/about-shoe-company.png" alt="about shoe company"/>
+                <img  src={aboutShoeImage} alt="about shoe company"/>
             </div>
             <div className="space-y-8 max-w-xl md:w-full">
                 <h2 className="text-6xl font-bold hidden md:block">About Us!</h2>
