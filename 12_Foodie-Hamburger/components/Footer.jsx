@@ -6,7 +6,7 @@ export default function Footer() {
             scrollTo(0);
         }}>Go to Top</a>
       </h3>
-      <p className="footer-text">Made with ❤️ by vijay makuvara</p>
+      <p className="footer-text">Made with ❤️ by vijay gadhvi</p>
     </footer>
   );
 }
