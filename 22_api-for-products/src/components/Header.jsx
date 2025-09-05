@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import dayMode from "../assets/dayMode.png";
 import nightMode from "../assets/nightMode.png";
 import { useTheme } from "../context/ThemeContext";
-import { useEffect } from "react";
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
