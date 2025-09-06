@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/AuthProvider";
+import { setLocalStorage } from "../../utils/localStorage";
 
 export default function CreateTask(){
 const [taskTitle,setTaskTitle]=useState('');
@@ -8,22 +9,22 @@ const [taskDate,setTaskDate]=useState('');
 const [assignTo,setAssignTo]=useState('');
 const [category,setCategory]=useState('');
 
-const [newTask,setNewTask]=useState({})
 const [userData,setUserData]=useContext(AuthContext)
-
+ console.log(userData)
   const submitHandler=(e)=>{
     e.preventDefault();
 
     const newTask={taskTitle,taskDescription,taskDate,category,assignTo,active:false,newTask:true,failed:false,completed:false}
 
-    const data=userData
+    const data=[...userData]
 
     data.forEach((elem)=>{
-      if(assignTo == elem.firstName){
+      if(assignTo.toLocaleLowerCase() == elem.firstName.toLocaleLowerCase()){
         elem.tasks.push(newTask)
         elem.taskSummary.newTask=elem.taskSummary.newTask+1
       }
     })
+    setLocalStorage([...data])
     setUserData(data)
     setTaskTitle('')
     setTaskDescription('')

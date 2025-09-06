@@ -400,8 +400,8 @@ const admin = [
   },
 ];
 
-export const setLocalStorage = () => {
-  localStorage.setItem("employees", JSON.stringify(employees));
+export const setLocalStorage = (pData) => {
+  localStorage.setItem("employees", JSON.stringify(pData || employees));
   localStorage.setItem("admin", JSON.stringify(admin));
 };
 

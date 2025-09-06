@@ -8,7 +8,7 @@ export default function AuthProvider({children}){
 
    
 useEffect(()=>{
-    setLocalStorage()
+    setLocalStorage(userData)
        const {employees}=getLocalStorage()
    setUserData(employees)
 },[])
