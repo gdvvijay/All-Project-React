@@ -1,11 +1,5 @@
 import leftArrow from '../assets/leftArrow.png'
 import rightArrow from '../assets/rightArrow.png'
-import categoryCellPhone from '../assets/Category-CellPhone.png'
-import categoryComputerIcon from '../assets/Category-Computer.png'
-import categorySmartWatch from '../assets/Category-SmartWatch.png'
-import categoryCamera from '../assets/Category-Camera.png'
-import categoryHeadphone from '../assets/Category-Headphone.png'
-import categoryGamepad from '../assets/Category-Gamepad.png'
 import { useRef } from "react";
 import useData from '../data/data'
 import { Link } from 'react-router-dom'

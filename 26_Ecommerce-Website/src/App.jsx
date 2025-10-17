@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
 import UseWishListContextProvider from './Hooks/useWishListContext'
-  import { ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import CartContextProvider from "./Hooks/useCartContext";
 import { useState } from "react";
 import SearchProduct from "./components/SearchProducts";
