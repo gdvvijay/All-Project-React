@@ -51,7 +51,7 @@ export default function ThisMonthSection(){
           </span>
         </div>
         <div className="best-selling-text flex justify-between">
-          <div className="font-[inter] text-4xl max-lg:text-3xl max-md:text-[26px] font-medium">Best Selling Products</div>
+          <div className="font-[inter] text-4xl max-lg:text-3xl  max-md:text-[26px] max-sm:text-xl font-medium">Best Selling Products</div>
           <div className="">
             <Link to='/allitems' className="bg-[#DB4444] rounded text-white px-7 py-2 max-md:px-6 max-md:py-1.5 max-md:text-sm max-sm:text-[10px] ml-2.5">
               View All
