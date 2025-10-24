@@ -45,7 +45,7 @@ export default function Header({search}) {
       <div
         className={`flex gap-7 max-[400px]:text-[10px] font-[Poppins] max-[800px]:absolute max-[800px]:flex-col max-[800px]:right-1 max-[800px]:gap-2 max-[800px]:top-28 max-[800px]:border max-[800px]:rounded max-[800px]:px-2.5 max-[800px]:py-0.5 ${
           isOpen ? "max-[800px]:flex" : "max-[800px]:hidden"
-        } max-[800px]:z-50 max-[800px]:drop-shadow-[0px_5px_4px_#000000]`}
+        } max-[800px]:z-50 bg-white/70 backdrop-blur-sm`}
       >
         <Link to="/">Home</Link>
         <Link to="/contact">Contact</Link>
@@ -208,7 +208,7 @@ export default function Header({search}) {
           }}
         >
           <svg
-            className="w-7 stroke-[#000000c5] max-[600px]:w-5 max-[430px]:w-4"
+            className="w-7 stroke-[#000000be] max-[600px]:w-5 max-[430px]:w-4"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
