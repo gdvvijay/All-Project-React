@@ -114,7 +114,7 @@ import perfume from '../assets/perfume.png'
 import perfumePrev from '../assets/perfumPrev.jpeg'
 import perfumePrev1 from '../assets/perfumPrev1.jpeg'
 import perfumePrev2 from '../assets/perfumPrev2.jpeg'
-import perfumePrev3 from '../assets/perfumprev3.jpeg'
+import perfumePrev3 from '../assets/perfumPrev3.jpeg'
 
 const originalObject = {
   firstSection: [
