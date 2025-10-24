@@ -59,7 +59,7 @@ export default function Header({search}) {
         <Link to="/signup">Sign Up</Link>
       </div>
       <div className="flex items-center space-x-2.5 max-[430px]:space-x-1">
-        <div className="search-box relative px-3 max-[400px]:px-2 flex items-center w-[243px] max-[800px]:w-[220px] max-[600px]:w-[209px] max-[430px]:w-[180px] max-[400px]:w-[160px] bg-[#F5F5F5] focus-within:outline-2 rounded">
+        <div className="search-box relative px-3 max-[400px]:px-2 flex items-center w-[243px] max-[800px]:w-[220px] max-[600px]:w-[209px] max-[430px]:w-[180px] max-[400px]:w-40 bg-[#F5F5F5] focus-within:outline-2 rounded">
           <input
             type="text"
             value={searchProduct}
