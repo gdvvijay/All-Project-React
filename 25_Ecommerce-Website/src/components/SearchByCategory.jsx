@@ -43,7 +43,7 @@ export default function SearchByCategory(){
 
       const isAvailable=data.allItem.some((filteredItem)=>filteredItem.category.toLowerCase().includes(category.toLowerCase()))
       if(!isAvailable){
-        return <div className="w-full flex justify-center font-semibold font-[Poppins] text-red-500 animate-pulse mt-10">Item is Not Available for {category} category</div>
+        return <div className="w-full flex justify-center font-semibold font-[Poppins] text-red-500 animate-pulse mt-10 max-sm:text-[10px]">Item is Not Available for {category} category</div>
       }
     
       
