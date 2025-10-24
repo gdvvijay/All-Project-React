@@ -1,4 +1,6 @@
+# ───────────────────────────────
 # Logs
+# ───────────────────────────────
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,55 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ───────────────────────────────
+# Dependency directories
+# ───────────────────────────────
+node_modules/
 
-# Editor directories and files
+# ───────────────────────────────
+# Build output
+# ───────────────────────────────
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.cache/
+
+# ───────────────────────────────
+# Environment files
+# (⚠️ never commit API keys or secrets)
+# ───────────────────────────────
+.env
+.env.*.local
+.env.local
+
+# ───────────────────────────────
+# Editor & OS files
+# ───────────────────────────────
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ───────────────────────────────
+# Optional: testing / coverage / misc
+# ───────────────────────────────
+coverage/
+*.tgz
+*.pem
+*.key
+*.crt
+
+# ───────────────────────────────
+# Lockfiles (optional — uncomment if using only one package manager)
+# ───────────────────────────────
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
